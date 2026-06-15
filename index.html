@@ -1,802 +1,250 @@
-
-Skip to content
-
-    Sharpline-Emergence
-    mortgage-masher
-
-Repository navigation
-
-    Code
-    Issues
-    Pull requests
-    Agents
-    Actions
-    Projects
-    Wiki
-    Security and quality
-    Insights
-    Settings
-
-Commit f961ac5
-Sharpline-Emergence
-Sharpline-Emergence
-committed
-1 hour ago
-·
-Update index.html with SEO and AdSense tags
-main
-
-1 parent 
-06eb044
- commit 
-f961ac5
-
-1 file changed
-+840Lines changed: 840 additions & 0 deletions
- 
-‎index.html‎
-+840Lines changed: 840 additions & 0 deletions
-Original file line number	Diff line number	Diff line change
-@@ -0,0 +1,840 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Canadian Mortgage Calculator — Monthly Payment &amp; Amortization | Sharpline</title>
-<meta name="description" content="Free Canadian mortgage calculator. Calculate your monthly payment, total interest, CMHC insurance, and full amortization schedule. No sign-up required.">
-<meta name="keywords" content="mortgage calculator, Canadian mortgage calculator, CMHC calculator, amortization schedule, mortgage payment calculator, home loan calculator, mortgage interest calculator">
+<title>Free US Mortgage Calculator 2026 — Monthly Payment, PMI &amp; Amortization | MortgageMasher</title>
+<meta name="description" content="Free US mortgage calculator. Calculate your exact monthly payment, PMI insurance costs, and amortization comparison. Works for conventional, FHA and VA loans. No sign-up required.">
+<meta name="keywords" content="mortgage calculator, US mortgage calculator, mortgage calculator USA, PMI calculator, amortization calculator, mortgage payment calculator, FHA mortgage, VA mortgage, conventional mortgage, mortgage broker USA, home buying calculator">
 <meta name="author" content="Sharpline">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://mortgageslice.ca/">
-<meta property="og:title" content="Free Canadian Mortgage Calculator | Sharpline">
-<meta property="og:description" content="Calculate your monthly mortgage payment, CMHC insurance, and full amortization schedule. Free, instant, no sign-up.">
+<link rel="canonical" href="https://mortgagemasher.com/">
+<meta property="og:title" content="Free US Mortgage Calculator 2026 | MortgageMasher">
+<meta property="og:description" content="Calculate your exact US mortgage payment with PMI insurance, down payment options and amortization comparison. Free, no sign-up.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://mortgageslice.ca/">
-<meta property="og:site_name" content="Sharpline — MortgageSlice.ca">
+<meta property="og:url" content="https://mortgagemasher.com/">
+<meta property="og:site_name" content="Sharpline — MortgageMasher.com">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Free Canadian Mortgage Calculator | Sharpline">
-<meta name="twitter:description" content="Monthly payment, CMHC insurance, and amortization schedule. Free, no sign-up.">
+<meta name="twitter:title" content="Free US Mortgage Calculator | MortgageMasher">
+<meta name="twitter:description" content="Monthly payment, PMI insurance and amortization comparison. Built for US mortgage rules. Free, no sign-up.">
 <meta name="google-adsense-account" content="ca-pub-8775883855490271">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8775883855490271" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #0f1a0f;
-    --paper: #f5f0e8;
-    --sage: #4a7c59;
-    --sage-light: #7aaa8a;
-    --sage-pale: #d4e8da;
-    --gold: #c8922a;
-    --cream: #faf7f0;
-    --muted: #8a8a7a;
-    --border: #d8d0c0;
-    --blue: #3a6b8a;
-    --blue-pale: #c8dce8;
-    --red: #b84444;
-    --red-pale: #f5dada;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'DM Mono', monospace;
-    min-height: 100vh;
-    padding-bottom: 5rem;
-  }
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 100;
-    opacity: 0.5;
-  }
-  header {
-    padding: 2.5rem 3rem 1.5rem;
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    border-bottom: 1px solid var(--border);
-  }
-  .logo { font-family: 'DM Serif Display', serif; font-size: 1.8rem; color: var(--sage); letter-spacing: -0.02em; }
-  .logo span { color: var(--gold); }
-  .tagline { font-size: 0.7rem; color: var(--muted); letter-spacing: 0.15em; text-transform: uppercase; }
-  nav {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    padding: 0.8rem 3rem;
-    border-top: 1px solid var(--border);
-    background: var(--cream);
-    display: flex;
-    gap: 1.5rem;
-    font-size: 0.72rem;
-    z-index: 99;
-    justify-content: center;
-    box-shadow: 0 -2px 12px rgba(15,26,15,0.06);
-  }
-  nav a { color: var(--sage); text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
-  nav a:hover { color: var(--gold); }
-  main { max-width: 960px; margin: 2.5rem auto; padding: 0 2rem; }
-  .hero { text-align: center; margin-bottom: 2.5rem; }
-  .hero h1 { font-family: 'DM Serif Display', serif; font-size: 2.2rem; color: var(--ink); margin-bottom: 0.5rem; line-height: 1.2; }
-  .hero h1 span { color: var(--sage); font-style: italic; }
-  .hero p { font-size: 0.78rem; color: var(--muted); line-height: 1.8; max-width: 520px; margin: 0 auto; }
-  /* Input grid */
-  .input-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .panel { background: var(--cream); border: 1px solid var(--border); border-radius: 4px; padding: 2rem; }
-  .panel-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: var(--ink);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .panel-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-  .field { margin-bottom: 1.2rem; }
-  label { display: block; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
-  .input-wrap { position: relative; }
-  .input-wrap .prefix {
-    position: absolute;
-    left: 0.7rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--muted);
-    font-size: 0.78rem;
-    pointer-events: none;
-    font-family: 'DM Mono', monospace;
-  }
-  .input-wrap .suffix {
-    position: absolute;
-    right: 0.7rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--muted);
-    font-size: 0.72rem;
-    pointer-events: none;
-  }
-  input[type="number"], select {
-    width: 100%;
-    background: var(--paper);
-    border: 1px solid var(--border);
-    border-radius: 2px;
-    padding: 0.65rem 0.85rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.92rem;
-    color: var(--ink);
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    -moz-appearance: textfield;
-  }
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
-  .has-prefix input { padding-left: 2.2rem; }
-  .has-suffix input { padding-right: 2.2rem; }
-  input:focus, select:focus { border-color: var(--sage); box-shadow: 0 0 0 3px rgba(74,124,89,0.12); }
-  .field-hint { font-size: 0.62rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.5; }
-  /* CMHC notice */
-  .cmhc-notice {
-    background: var(--blue-pale);
-    border-left: 3px solid var(--blue);
-    padding: 0.7rem 1rem;
-    border-radius: 0 2px 2px 0;
-    font-size: 0.72rem;
-    color: var(--blue);
-    line-height: 1.6;
-    margin-top: 0.8rem;
-    display: none;
-  }
-  .cmhc-notice strong { color: var(--ink); }
-  /* Calculate button */
-  .calc-btn {
-    width: 100%;
-    background: var(--sage);
-    color: white;
-    border: none;
-    border-radius: 2px;
-    padding: 1rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.2s, transform 0.1s;
-    margin-bottom: 2rem;
-  }
-  .calc-btn:hover { background: #3d6849; }
-  .calc-btn:active { transform: scale(0.99); }
-  /* Results */
-  .results { opacity: 0; transform: translateY(10px); transition: opacity 0.4s, transform 0.4s; }
-  .results.visible { opacity: 1; transform: translateY(0); }
-  /* Summary cards */
-  .summary-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  .s-card { background: var(--cream); border: 1px solid var(--border); border-radius: 4px; padding: 1.2rem; animation: fadeUp 0.4s ease both; }
-  .s-card.highlight { background: var(--sage-pale); border-color: var(--sage); }
-  .s-card.blue { background: var(--blue-pale); border-color: var(--blue); }
-  .s-card.gold { background: #fdf3e0; border-color: var(--gold); }
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-  .s-card-label { font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.3rem; }
-  .s-card-value { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--ink); line-height: 1.1; margin-bottom: 0.2rem; }
-  .s-card.highlight .s-card-value { color: var(--sage); }
-  .s-card.blue .s-card-value { color: var(--blue); }
-  .s-card.gold .s-card-value { color: var(--gold); }
-  .s-card-sub { font-size: 0.62rem; color: var(--muted); line-height: 1.5; }
-  /* Payment breakdown donut */
-  .breakdown-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .breakdown-panel { background: var(--cream); border: 1px solid var(--border); border-radius: 4px; padding: 1.8rem; }
-  .breakdown-title { font-family: 'DM Serif Display', serif; font-size: 1.1rem; margin-bottom: 1.2rem; display: flex; align-items: center; gap: 0.5rem; }
-  .breakdown-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-  /* Stacked bar */
-  .stack-bar { height: 16px; border-radius: 3px; overflow: hidden; display: flex; margin-bottom: 1rem; }
-  .stack-principal { background: var(--sage); transition: width 0.8s ease; }
-  .stack-interest { background: var(--gold); transition: width 0.8s ease; }
-  .stack-cmhc { background: var(--blue); transition: width 0.8s ease; }
-  .stack-legend { display: flex; flex-direction: column; gap: 0.5rem; }
-  .legend-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.72rem; }
-  .legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
-  .legend-dot.principal { background: var(--sage); }
-  .legend-dot.interest { background: var(--gold); }
-  .legend-dot.cmhc { background: var(--blue); }
-  .legend-label { color: var(--muted); flex: 1; }
-  .legend-value { color: var(--ink); font-weight: 500; }
-  .legend-pct { color: var(--muted); font-size: 0.65rem; }
-  /* Comparison panel */
-  .comparison-panel { background: var(--cream); border: 1px solid var(--border); border-radius: 4px; padding: 1.8rem; margin-bottom: 2rem; }
-  .comp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; }
-  .comp-card { background: var(--paper); border: 1px solid var(--border); border-radius: 3px; padding: 1rem; text-align: center; transition: border-color 0.2s; }
-  .comp-card.active { border-color: var(--sage); background: var(--sage-pale); }
-  .comp-period { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.3rem; }
-  .comp-payment { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--ink); margin-bottom: 0.2rem; }
-  .comp-card.active .comp-payment { color: var(--sage); }
-  .comp-interest { font-size: 0.68rem; color: var(--muted); }
-  .comp-saving { font-size: 0.65rem; color: var(--sage); margin-top: 0.3rem; font-weight: 500; }
-  /* CMHC panel */
-  .cmhc-panel { background: var(--blue-pale); border: 1px solid var(--blue); border-radius: 4px; padding: 1.8rem; margin-bottom: 2rem; display: none; }
-  .cmhc-title { font-family: 'DM Serif Display', serif; font-size: 1.1rem; margin-bottom: 1rem; color: var(--blue); display: flex; align-items: center; gap: 0.5rem; }
-  .cmhc-title::after { content: ''; flex: 1; height: 1px; background: #a0c4d8; }
-  .cmhc-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
-  .cmhc-item { background: white; border-radius: 3px; padding: 0.8rem; text-align: center; }
-  .cmhc-item-label { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.2rem; }
-  .cmhc-item-value { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--blue); }
-  .cmhc-note { font-size: 0.68rem; color: var(--blue); line-height: 1.6; margin-top: 0.8rem; }
-  /* Tip box */
-  .tip-box { background: var(--sage-pale); border-left: 3px solid var(--sage); padding: 1rem 1.2rem; border-radius: 0 2px 2px 0; font-size: 0.78rem; color: var(--sage); line-height: 1.6; margin-bottom: 2rem; }
-  .tip-box strong { color: var(--ink); }
-  /* Ad slot */
-  .ad-slot { background: var(--cream); border: 1px dashed var(--border); text-align: center; padding: 0.8rem; color: var(--muted); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; margin-bottom: 2rem; }
-  .ad-box { background: var(--border); height: 90px; display: flex; align-items: center; justify-content: center; border-radius: 2px; margin-top: 0.3rem; color: var(--muted); font-size: 0.7rem; }
-  /* Share row */
-  .share-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 2rem; }
-  .btn-secondary { width: 100%; background: transparent; color: var(--sage); border: 1px solid var(--sage); border-radius: 2px; padding: 0.85rem; font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
-  .btn-secondary:hover { background: var(--sage-pale); }
-  .btn-gold { width: 100%; background: var(--gold); color: white; border: none; border-radius: 2px; padding: 0.85rem; font-family: 'DM Mono', monospace; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
-  .btn-gold:hover { background: #b07820; }
-  /* Tools panel */
-  .tools-panel { background: var(--cream); border: 1px solid var(--border); border-radius: 4px; padding: 1.8rem; margin-bottom: 2rem; }
-  .tools-panel-title { font-family: 'DM Serif Display', serif; font-size: 1.2rem; margin-bottom: 1.2rem; color: var(--ink); padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); }
-  .tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-  .tool-card { background: var(--paper); border: 1px solid var(--border); border-radius: 4px; padding: 1.2rem; text-decoration: none; color: var(--ink); transition: border-color 0.2s, box-shadow 0.2s; display: block; }
-  .tool-card:hover { border-color: var(--sage); box-shadow: 0 2px 8px rgba(74,124,89,0.12); }
-  .tool-icon { font-size: 1.4rem; margin-bottom: 0.4rem; }
-  .tool-name { font-size: 0.78rem; font-weight: 500; color: var(--sage); margin-bottom: 0.3rem; }
-  .tool-desc { font-size: 0.66rem; color: var(--muted); line-height: 1.6; margin-bottom: 0.5rem; }
-  .tool-link { font-size: 0.63rem; color: var(--gold); letter-spacing: 0.05em; }
-  /* Modal */
-  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(15,26,15,0.5); z-index: 200; align-items: center; justify-content: center; }
-  .modal-overlay.open { display: flex; }
-  .modal { background: var(--cream); border: 1px solid var(--border); border-radius: 4px; padding: 2rem; width: 100%; max-width: 420px; margin: 1rem; }
-  .modal-title { font-family: 'DM Serif Display', serif; font-size: 1.2rem; margin-bottom: 1.2rem; color: var(--sage); }
-  .modal-close { float: right; background: none; border: none; color: var(--muted); font-size: 1.2rem; cursor: pointer; width: auto; padding: 0; margin: 0; line-height: 1; }
-  .modal-close:hover { color: var(--ink); }
-  .modal input { width: 100%; background: var(--paper); border: 1px solid var(--border); border-radius: 2px; padding: 0.65rem 0.85rem; font-family: 'DM Mono', monospace; font-size: 0.88rem; color: var(--ink); outline: none; margin-bottom: 1rem; }
-  .modal input:focus { border-color: var(--sage); box-shadow: 0 0 0 3px rgba(74,124,89,0.12); }
-  .modal label { display: block; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
-  .modal-note { font-size: 0.65rem; color: var(--muted); margin-top: 0.8rem; line-height: 1.5; }
-  footer { text-align: center; padding: 1.5rem 2rem; font-size: 0.65rem; color: var(--muted); letter-spacing: 0.08em; border-top: 1px solid var(--border); margin-top: 1rem; }
-  footer a { color: var(--sage); text-decoration: none; }
-  @media (max-width: 680px) {
-    header { padding: 1.5rem; flex-direction: column; gap: 0.3rem; }
-    .input-grid { grid-template-columns: 1fr; }
-    .summary-cards { grid-template-columns: 1fr 1fr; }
-    .breakdown-section { grid-template-columns: 1fr; }
-    .comp-grid { grid-template-columns: 1fr; }
-    .cmhc-grid { grid-template-columns: 1fr; }
-    .tools-grid { grid-template-columns: 1fr; }
-    .share-row { grid-template-columns: 1fr; }
-    nav { padding: 0.8rem 1rem; gap: 0.8rem; font-size: 0.65rem; }
-  }
-  @media print {
-    body::before, nav, .ad-slot, .share-row, .tools-panel, .calc-btn { display: none !important; }
-    .results { opacity: 1 !important; transform: none !important; }
-    header { border-bottom: 2px solid #4a7c59; }
-  }
+  :root{--ink:#0f1a0f;--paper:#f5f0e8;--sage:#4a7c59;--sage-light:#7aaa8a;--sage-pale:#d4e8da;--gold:#c8922a;--cream:#faf7f0;--muted:#8a8a7a;--border:#d8d0c0;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'DM Mono',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:5rem;}
+  body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:100;opacity:0.5;}
+  header{padding:2.5rem 3rem 1.5rem;display:flex;align-items:baseline;gap:1rem;border-bottom:1px solid var(--border);}
+  .logo{font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--sage);letter-spacing:-0.02em;}
+  .logo span{color:var(--gold);}
+  .tagline{font-size:0.7rem;color:var(--muted);letter-spacing:0.15em;text-transform:uppercase;}
+  nav{position:fixed;bottom:0;left:0;right:0;padding:0.8rem 3rem;border-top:1px solid var(--border);background:var(--cream);display:flex;gap:1.5rem;font-size:0.72rem;z-index:99;justify-content:center;box-shadow:0 -2px 12px rgba(15,26,15,0.06);}
+  nav a{color:var(--sage);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;}
+  nav a:hover{color:var(--gold);}
+  .calc-wrap{max-width:960px;margin:2.5rem auto;padding:0 2rem;}
+  .hero{text-align:center;margin-bottom:2rem;}
+  .hero h1{font-family:'DM Serif Display',serif;font-size:2.2rem;color:var(--ink);margin-bottom:0.5rem;line-height:1.2;}
+  .hero h1 span{color:var(--sage);font-style:italic;}
+  .hero p{font-size:0.78rem;color:var(--muted);line-height:1.8;max-width:540px;margin:0 auto 1rem;}
+  .us-badge{display:inline-flex;align-items:center;gap:0.6rem;background:var(--cream);border:1px solid var(--border);border-radius:3px;padding:0.5rem 1rem;font-size:0.68rem;color:var(--muted);}
+  .banner{background:#1a3a2a;color:#c8e8d0;text-align:center;padding:0.7rem 2rem;font-size:0.75rem;letter-spacing:0.05em;display:flex;align-items:center;justify-content:center;gap:0.8rem;}
+  .banner a{color:#c8922a;text-decoration:none;font-weight:500;border:1px solid #c8922a;padding:0.3rem 0.8rem;border-radius:2px;}
+  .input-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.5rem;}
+  .panel{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:2rem;}
+  .panel-title{font-family:'DM Serif Display',serif;font-size:1.2rem;margin-bottom:1.5rem;color:var(--ink);display:flex;align-items:center;gap:0.5rem;}
+  .panel-title::after{content:'';flex:1;height:1px;background:var(--border);}
+  .field{margin-bottom:1.2rem;}
+  label{display:block;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.4rem;}
+  .input-wrap{position:relative;}
+  .input-wrap .prefix{position:absolute;left:0.7rem;top:50%;transform:translateY(-50%);color:var(--muted);font-size:0.78rem;pointer-events:none;}
+  input[type="number"],select{width:100%;background:var(--paper);border:1px solid var(--border);border-radius:2px;padding:0.65rem 0.85rem;font-family:'DM Mono',monospace;font-size:0.92rem;color:var(--ink);outline:none;transition:border-color 0.2s,box-shadow 0.2s;-moz-appearance:textfield;}
+  input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{-webkit-appearance:none;}
+  .has-prefix input{padding-left:2.2rem;}
+  input:focus,select:focus{border-color:var(--sage);box-shadow:0 0 0 3px rgba(74,124,89,0.12);}
+  .calc-btn{width:100%;background:var(--sage);color:white;border:none;border-radius:2px;padding:1rem;font-family:'DM Mono',monospace;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:background 0.2s,transform 0.1s;margin-top:1rem;}
+  .calc-btn:hover{background:#3d6849;}
+  .calc-btn:active{transform:scale(0.99);}
+  .results{opacity:0;transform:translateY(10px);transition:opacity 0.4s,transform 0.4s;}
+  .results.visible{opacity:1;transform:translateY(0);}
+  .summary-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:2rem;}
+  .s-card{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:1.2rem;animation:fadeUp 0.4s ease both;}
+  .s-card.highlight{background:var(--sage-pale);border-color:var(--sage);}
+  .s-card.gold{background:#fdf3e0;border-color:var(--gold);}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+  .s-card-label{font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem;}
+  .s-card-value{font-family:'DM Serif Display',serif;font-size:1.5rem;color:var(--ink);line-height:1.1;margin-bottom:0.2rem;}
+  .s-card.highlight .s-card-value{color:var(--sage);}
+  .s-card.gold .s-card-value{color:var(--gold);}
+  .s-card-sub{font-size:0.62rem;color:var(--muted);line-height:1.5;}
+  .ad-slot{background:var(--cream);border:1px dashed var(--border);text-align:center;padding:0.8rem;color:var(--muted);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;border-radius:2px;margin:2rem 0;}
+  .ad-box{background:var(--border);height:90px;display:flex;align-items:center;justify-content:center;border-radius:2px;margin-top:0.3rem;color:var(--muted);font-size:0.7rem;}
+  .content-wrap{max-width:960px;margin:0 auto;padding:0 2rem;}
+  .section{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:2rem;margin-bottom:1.5rem;}
+  .section h2{font-family:'DM Serif Display',serif;font-size:1.5rem;color:var(--ink);margin-bottom:1rem;padding-bottom:0.6rem;border-bottom:1px solid var(--border);}
+  .section h3{font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--sage);margin:1.2rem 0 0.5rem;}
+  .section p{font-size:0.82rem;line-height:1.9;color:var(--ink);margin-bottom:0.8rem;}
+  .section ul{margin:0.5rem 0 0.8rem 1.2rem;}
+  .section ul li{font-size:0.82rem;line-height:1.9;color:var(--ink);margin-bottom:0.4rem;}
+  .tools-panel{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:1.8rem;margin-bottom:2rem;}
+  .tools-panel-title{font-family:'DM Serif Display',serif;font-size:1.2rem;margin-bottom:1.2rem;color:var(--ink);padding-bottom:0.6rem;border-bottom:1px solid var(--border);}
+  .tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+  .tool-card{background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:1.2rem;text-decoration:none;color:var(--ink);transition:border-color 0.2s,box-shadow 0.2s;display:block;}
+  .tool-card:hover{border-color:var(--sage);box-shadow:0 2px 8px rgba(74,124,89,0.12);}
+  .tool-icon{font-size:1.4rem;margin-bottom:0.4rem;}
+  .tool-name{font-size:0.78rem;font-weight:500;color:var(--sage);margin-bottom:0.3rem;}
+  .tool-desc{font-size:0.65rem;color:var(--muted);line-height:1.6;margin-bottom:0.5rem;}
+  .tool-link{font-size:0.63rem;color:var(--gold);letter-spacing:0.05em;}
+  footer{text-align:center;padding:1.5rem 2rem;font-size:0.65rem;color:var(--muted);letter-spacing:0.08em;border-top:1px solid var(--border);margin-top:1rem;line-height:2;}
+  footer a{color:var(--sage);text-decoration:none;}
+  footer a:hover{color:var(--gold);}
+  .tip-box{background:var(--sage-pale);border-left:3px solid var(--sage);padding:1rem 1.2rem;border-radius:0 2px 2px 0;font-size:0.78rem;color:var(--sage);line-height:1.6;margin-bottom:1.5rem;}
+  .tip-box strong{color:var(--ink);}
+  .share-row{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:2rem;}
+  .btn-secondary{width:100%;background:transparent;color:var(--sage);border:1px solid var(--sage);border-radius:2px;padding:0.85rem;font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;}
+  .btn-secondary:hover{background:var(--sage-pale);}
+  .btn-gold{width:100%;background:var(--gold);color:white;border:none;border-radius:2px;padding:0.85rem;font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;}
+  .btn-gold:hover{background:#b07820;}
+  @media(max-width:680px){header{padding:1.5rem;flex-direction:column;gap:0.3rem;}.input-grid{grid-template-columns:1fr;}.summary-cards{grid-template-columns:1fr 1fr;}.tools-grid{grid-template-columns:1fr 1fr;}.share-row{grid-template-columns:1fr;}nav{padding:0.8rem 1rem;gap:0.8rem;font-size:0.65rem;}}
+  @media(max-width:400px){.tools-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
+
+<div class="banner">
+  🇨🇦 Looking for the Canadian version?
+  <a href="https://mortgagemasher.ca" target="_blank" rel="noopener">Visit mortgagemasher.ca →</a>
+</div>
+
 <header>
   <div class="logo">Sharpline<span>.</span></div>
-  <div class="tagline">Canadian Mortgage Calculator | Sharpline Tools</div>
+  <div class="tagline">US Mortgage Calculator | mortgagemasher.com</div>
 </header>
-<main>
+
+<div class="calc-wrap">
   <div class="hero">
-    <h1>Canadian <span>Mortgage</span> Calculator</h1>
-    <p>Enter your home price, down payment, and rate to instantly see your monthly payment, CMHC insurance, and full amortization schedule.</p>
-    <div style="display:inline-flex;align-items:center;gap:0.6rem;margin-top:1rem;background:var(--cream);border:1px solid var(--border);border-radius:3px;padding:0.5rem 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="28" height="14" style="border:1px solid #d8d0c0;border-radius:1px;">
-        <rect width="900" height="450" fill="#fff"/>
-        <rect width="225" height="450" fill="#d80000"/>
-        <rect x="675" width="225" height="450" fill="#d80000"/>
-        <path d="M450 90 l30 80 h85 l-68 50 26 85-73-53-73 53 26-85-68-50h85z" fill="#d80000"/>
-      </svg>
-      <span style="font-size:0.68rem;color:var(--muted);letter-spacing:0.05em;">Optimised for Canadian mortgages · CMHC rules · Semi-annual compounding · CA$</span>
+    <h1>US <span>Mortgage</span> Calculator</h1>
+    <p>Calculate your exact monthly payment, PMI insurance costs and amortization comparison — built specifically for US mortgage rules.</p>
+    <div class="us-badge">
+      🇺🇸 Optimised for US mortgages · Monthly compounding · PMI included · USD
     </div>
   </div>
-  <!-- Input Grid -->
+
   <div class="input-grid">
-    <!-- Left panel: Property & Loan -->
     <div class="panel">
       <div class="panel-title">Property &amp; Loan</div>
-      <div class="field">
-        <label>Currency</label>
-        <select id="currency" disabled style="opacity:0.6;cursor:not-allowed;">
-          <option value="CA$" selected>CA$ — Canadian Dollar</option>
-        </select>
+      <div class="field"><label>Home Price</label><div class="input-wrap has-prefix"><span class="prefix">$</span><input type="number" id="homePrice" placeholder="350,000" min="0" value="350000" /></div></div>
+      <div class="field"><label>Down Payment</label>
+        <div class="input-wrap has-prefix"><span class="prefix">$</span><input type="number" id="downPayment" placeholder="70,000" min="0" value="70000" oninput="syncDownPct()" /></div>
+        <div class="input-wrap has-prefix" style="margin-top:0.5rem;"><span class="prefix">%</span><input type="number" id="downPct" placeholder="20" min="0" max="100" step="0.1" value="20" oninput="syncDownAmt()" /></div>
       </div>
-      <div class="field">
-        <label>Home Price</label>
-        <div class="input-wrap has-prefix">
-          <span class="prefix">$</span>
-          <input type="number" id="homePrice" placeholder="650,000" min="0" value="650000" />
-        </div>
+      <div class="field"><label>Annual Interest Rate</label><div class="input-wrap has-prefix"><span class="prefix">%</span><input type="number" id="rate" placeholder="6.5" min="0" max="30" step="0.01" value="6.5" /></div></div>
+      <div class="field"><label>Loan Type</label>
+        <select id="loanType"><option value="conventional" selected>Conventional (20%+ down)</option><option value="fha">FHA (3.5%+ down)</option><option value="va">VA (0% down)</option></select>
       </div>
-      <div class="field">
-        <label>Down Payment</label>
-        <div class="input-wrap has-prefix">
-          <span class="prefix">$</span>
-          <input type="number" id="downPayment" placeholder="130,000" min="0" value="130000" oninput="syncDownPct()" />
-        </div>
-        <div class="input-wrap has-suffix" style="margin-top:0.5rem;">
-          <input type="number" id="downPct" placeholder="20" min="0" max="100" step="0.1" value="20" oninput="syncDownAmt()" />
-          <span class="suffix">%</span>
-        </div>
-        <div class="field-hint" id="cmhcNotice" style="display:none;">
-          ⚠️ Down payment under 20% — CMHC mortgage insurance applies.
-        </div>
-      </div>
-      <div class="field">
-        <label>Annual Interest Rate</label>
-        <div class="input-wrap has-suffix">
-          <input type="number" id="rate" placeholder="5.25" min="0" max="30" step="0.01" value="5.25" />
-          <span class="suffix">%</span>
-        </div>
-      </div>
-      <div class="field">
-        <label>Amortization Period</label>
-        <select id="amortization">
-          <option value="10">10 years</option>
-          <option value="15">15 years</option>
-          <option value="20">20 years</option>
-          <option value="25" selected>25 years</option>
-          <option value="30">30 years</option>
-        </select>
-        <div class="field-hint">Max 25 years for insured mortgages (under 20% down)</div>
-      </div>
-      <div class="field">
-        <label>Payment Frequency</label>
-        <select id="frequency">
-          <option value="12" selected>Monthly</option>
-          <option value="24">Semi-Monthly (twice/month)</option>
-          <option value="26">Bi-Weekly (every 2 weeks)</option>
-          <option value="52">Weekly</option>
-        </select>
+      <div class="field"><label>Loan Term</label>
+        <select id="amortization"><option value="15">15 years</option><option value="30" selected>30 years</option></select>
       </div>
     </div>
-    <!-- Right panel: Additional costs -->
     <div class="panel">
       <div class="panel-title">Additional Costs</div>
-      <div class="field">
-        <label>Annual Property Tax</label>
-        <div class="input-wrap has-prefix">
-          <span class="prefix">$</span>
-          <input type="number" id="propTax" placeholder="4,500" min="0" value="4500" />
-        </div>
-        <div class="field-hint">Typical: 0.5%–1.5% of home value per year</div>
-      </div>
-      <div class="field">
-        <label>Monthly Condo/Strata Fee</label>
-        <div class="input-wrap has-prefix">
-          <span class="prefix">$</span>
-          <input type="number" id="condoFee" placeholder="0" min="0" value="0" />
-        </div>
-        <div class="field-hint">Enter 0 if not applicable</div>
-      </div>
-      <div class="field">
-        <label>Monthly Home Insurance</label>
-        <div class="input-wrap has-prefix">
-          <span class="prefix">$</span>
-          <input type="number" id="insurance" placeholder="150" min="0" value="150" />
-        </div>
-      </div>
-      <p style="font-size:0.68rem;color:var(--muted);text-align:center;margin-top:1.2rem;line-height:1.6;">
-        ✏️ Edit the fields above with your details, then tap Calculate.
-      </p>
-      <button class="calc-btn" onclick="calculate()" style="margin-top:1rem;margin-bottom:0;">
-        Calculate My Mortgage →
-      </button>
+      <div class="field"><label>Annual Property Tax</label><div class="input-wrap has-prefix"><span class="prefix">$</span><input type="number" id="propTax" placeholder="3,500" min="0" value="3500" /></div><div style="font-size:0.68rem;color:var(--muted);margin-top:0.3rem;line-height:1.5;">Typical: 0.5%–1.5% of home value per year</div></div>
+      <div class="field"><label>Monthly HOA Fee (if applicable)</label><div class="input-wrap has-prefix"><span class="prefix">$</span><input type="number" id="hoaFee" placeholder="0" min="0" value="0" /></div></div>
+      <div class="field"><label>Monthly Home Insurance</label><div class="input-wrap has-prefix"><span class="prefix">$</span><input type="number" id="insurance" placeholder="120" min="0" value="120" /></div></div>
+      <p style="font-size:0.68rem;color:var(--muted);text-align:center;margin-top:1.2rem;line-height:1.6;">✏️ Edit the fields with your details then tap Calculate.</p>
+      <button class="calc-btn" onclick="calculate()">Calculate My Mortgage →</button>
     </div>
   </div>
-  <!-- Results -->
+
   <div class="results" id="results">
-    <!-- Summary cards -->
     <div class="summary-cards" id="summaryCards"></div>
-    <!-- Breakdown + Comparison -->
-    <div class="breakdown-section">
-      <!-- Payment breakdown -->
-      <div class="breakdown-panel">
-        <div class="breakdown-title">Total Cost Breakdown</div>
-        <div class="stack-bar">
-          <div class="stack-principal" id="barPrincipal" style="width:0%"></div>
-          <div class="stack-interest" id="barInterest" style="width:0%"></div>
-          <div class="stack-cmhc" id="barCmhc" style="width:0%"></div>
-        </div>
-        <div class="stack-legend" id="stackLegend"></div>
-      </div>
-      <!-- Amortization comparison -->
-      <div class="breakdown-panel">
-        <div class="breakdown-title">Amortization Comparison</div>
-        <div class="comp-grid" id="compGrid"></div>
-      </div>
-    </div>
-    <!-- CMHC panel -->
-    <div class="cmhc-panel" id="cmhcPanel">
-      <div class="cmhc-title">🇨🇦 CMHC Mortgage Insurance</div>
-      <div class="cmhc-grid" id="cmhcGrid"></div>
-      <p class="cmhc-note" id="cmhcNote"></p>
-    </div>
-    <!-- Tip -->
+    <div class="ad-slot"><div>Advertisement</div><div class="ad-box">AdSense 728×90 Leaderboard</div></div>
     <div class="tip-box" id="tipBox"></div>
-    <!-- Ad slot -->
-    <div class="ad-slot">
-      <div>Advertisement</div>
-      <div class="ad-box">AdSense 728×90 Leaderboard</div>
-    </div>
-    <!-- Share -->
     <div class="share-row">
       <button class="btn-secondary" onclick="window.print()">🖨️ Print Results</button>
-      <button class="btn-gold" onclick="openEmailModal()">✉️ Email Results</button>
+      <button class="btn-gold" onclick="alert('Email feature coming soon')">✉️ Email Results</button>
     </div>
-    <!-- Cross-links -->
-    <div class="tools-panel">
-      <div class="tools-panel-title">More Free Tools from Sharpline</div>
-      <div class="tools-grid">
-        <a href="https://vaultgoal.com" class="tool-card" target="_blank" rel="noopener">
-          <div class="tool-icon">🎯</div>
-          <div class="tool-name">Savings Goal Tracker</div>
-          <div class="tool-desc">See exactly when you'll reach your down payment savings goal.</div>
-          <div class="tool-link">vaultgoal.com →</div>
-        </a>
-        <a href="https://503020.ca" class="tool-card" target="_blank" rel="noopener">
-          <div class="tool-icon">📊</div>
-          <div class="tool-name">50/30/20 Budget Calculator</div>
-          <div class="tool-desc">Check if your mortgage fits within your 50% Needs budget.</div>
-          <div class="tool-link">503020.ca →</div>
-        </a>
-        <a href="https://debtcrusher.ca" class="tool-card" target="_blank" rel="noopener">
-          <div class="tool-icon">💳</div>
-          <div class="tool-name">Debt Payoff Calculator</div>
-          <div class="tool-desc">Pay off debt before your mortgage closes to improve your rate.</div>
-          <div class="tool-link">debtcrusher.ca →</div>
-        </a>
-      </div>
-    </div>
-  </div><!-- end results -->
-</main>
-<footer>
-  Sharpline Tools © 2026 &nbsp;·&nbsp;
-  <a href="about.html">About</a> &nbsp;·&nbsp;
-  <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
-  <a href="contact.html">Contact</a> &nbsp;·&nbsp;
-  Not financial advice · Results are estimates
-</footer>
-<nav>
-  <a href="index.html">🏠 Calculator</a>
-  <a href="about.html">About</a>
-  <a href="privacy.html">Privacy Policy</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<!-- Email Modal -->
-<div class="modal-overlay" id="emailModal">
-  <div class="modal">
-    <div class="modal-title">
-      <button class="modal-close" onclick="closeEmailModal()">✕</button>
-      Email Your Mortgage Summary
-    </div>
-    <div><label>Recipient Email</label><input type="email" id="emailTo" placeholder="friend@example.com" /></div>
-    <div><label>Your Name (optional)</label><input type="text" id="emailFrom" placeholder="e.g. Sarah" /></div>
-    <button class="calc-btn" style="margin-bottom:0.6rem;margin-top:0.5rem;" onclick="sendEmail()">Send Results →</button>
-    <button class="btn-secondary" onclick="closeEmailModal()" style="margin-top:0.4rem;">Cancel</button>
-    <p class="modal-note">Opens your email app with your mortgage summary pre-filled and ready to send.</p>
   </div>
 </div>
+
+<div class="content-wrap">
+  <div class="ad-slot"><div>Advertisement</div><div class="ad-box">AdSense 728×90</div></div>
+
+  <div class="section">
+    <h2>How the US Mortgage Calculator Works</h2>
+    <p>MortgageMasher uses correct US mortgage formulas — with monthly compounding — to give you an accurate monthly payment. Simply enter your home price, down payment, interest rate and loan term to instantly see your full mortgage picture.</p>
+    <h3>US vs Canadian Mortgage Math</h3>
+    <p>US mortgages compound interest monthly (12 times per year), unlike Canadian mortgages which compound semi-annually. This makes the calculation straightforward for US borrowers. MortgageMasher uses the correct US formula throughout all calculations.</p>
+  </div>
+
+  <div class="ad-slot"><div>Advertisement</div><div class="ad-box">AdSense 728×90</div></div>
+
+  <div class="section">
+    <h2>Understanding PMI (Private Mortgage Insurance)</h2>
+    <p>PMI is required when your down payment is less than 20% of the purchase price. It protects the lender if you default and is added to your monthly mortgage payment. You can request PMI removal once you reach 20% equity in your home.</p>
+    <h3>Loan Types Available</h3>
+    <p><strong>Conventional:</strong> Standard loan requiring at least 5-20% down. Requires PMI if under 20%.</p>
+    <p><strong>FHA:</strong> Government-backed loan requiring just 3.5% down. Includes mandatory Mortgage Insurance Premiums (MIP).</p>
+    <p><strong>VA:</strong> Available to eligible military service members. Requires 0% down with VA funding fee.</p>
+  </div>
+
+  <div class="tools-panel">
+    <div class="tools-panel-title">More Free Tools from Sharpline</div>
+    <div class="tools-grid">
+      <a href="https://vaultgoal.com" class="tool-card" target="_blank" rel="noopener"><div class="tool-icon">🎯</div><div class="tool-name">Savings Goal Tracker</div><div class="tool-desc">See exactly when you'll reach your down payment savings goal with milestone dates.</div><div class="tool-link">vaultgoal.com →</div></a>
+      <a href="https://503020.ca" class="tool-card" target="_blank" rel="noopener"><div class="tool-icon">📊</div><div class="tool-name">50/30/20 Budget Calculator</div><div class="tool-desc">Check if your new mortgage payment fits comfortably within your 50% Needs budget.</div><div class="tool-link">503020.ca →</div></a>
+      <a href="https://debtcrusher.ca" class="tool-card" target="_blank" rel="noopener"><div class="tool-icon">💳</div><div class="tool-name">Debt Payoff Calculator</div><div class="tool-desc">Pay off existing debt before closing to improve your mortgage qualification and rate.</div><div class="tool-link">debtcrusher.ca →</div></a>
+      <a href="https://mortgagemasher.ca" class="tool-card" target="_blank" rel="noopener"><div class="tool-icon">🍁</div><div class="tool-name">Canadian Mortgage Calculator</div><div class="tool-desc">CMHC, semi-annual compounding, FHSA. Built for Canadian mortgage rules.</div><div class="tool-link">mortgagemasher.ca →</div></a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Sharpline · mortgagemasher.com © 2026 &nbsp;·&nbsp;
+  <a href="https://mortgagemasher.ca">🇨🇦 Canadian Version</a> &nbsp;·&nbsp;
+  Not financial advice · Results are estimates
+</footer>
+
+<nav><a href="index.html">🏠 Calculator</a><a href="https://mortgagemasher.ca">🍁 Canadian</a></nav>
+
 <script>
-  var lastResults = {};
-  // Format number as Canadian currency
-  function fmt(n, sym) {
-    return 'CA$' + Math.round(Math.abs(n)).toLocaleString('en-CA');
-  }
-  function fmtFull(n, sym) {
-    return 'CA$' + Math.abs(n).toLocaleString('en-CA', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  }
-  // Sync down payment amount <-> percentage
-  function syncDownPct() {
-    var price = parseFloat(document.getElementById('homePrice').value) || 0;
-    var down  = parseFloat(document.getElementById('downPayment').value) || 0;
-    if (price > 0) {
-      document.getElementById('downPct').value = (down / price * 100).toFixed(1);
+  function fmt(n){return '$'+Math.round(Math.abs(n)).toLocaleString();}
+  function syncDownPct(){var p=parseFloat(document.getElementById('homePrice').value)||0;var d=parseFloat(document.getElementById('downPayment').value)||0;if(p>0)document.getElementById('downPct').value=(d/p*100).toFixed(1);}
+  function syncDownAmt(){var p=parseFloat(document.getElementById('homePrice').value)||0;var pct=parseFloat(document.getElementById('downPct').value)||0;document.getElementById('downPayment').value=Math.round(p*pct/100);}
+  function calculate(){
+    var homePrice=parseFloat(document.getElementById('homePrice').value)||0;
+    var downPayment=parseFloat(document.getElementById('downPayment').value)||0;
+    var annualRate=parseFloat(document.getElementById('rate').value)||0;
+    var amortYears=parseInt(document.getElementById('amortization').value)||30;
+    var propTax=parseFloat(document.getElementById('propTax').value)||0;
+    var hoaFee=parseFloat(document.getElementById('hoaFee').value)||0;
+    var homeIns=parseFloat(document.getElementById('insurance').value)||0;
+    
+    if(homePrice<=0){alert('Please enter a home price.');return;}
+    if(downPayment>=homePrice){alert('Down payment must be less than the home price.');return;}
+    
+    var downPct=downPayment/homePrice*100;
+    var principal=homePrice-downPayment;
+    var pmiAmount=0;
+    
+    if(downPct<20){
+      var pmiRate=0.005+((20-downPct)/10)*0.004;
+      pmiAmount=(principal*pmiRate)/12;
     }
-    checkCMHC();
+    
+    var monthlyRate=annualRate/100/12;
+    var numPayments=amortYears*12;
+    var monthlyPayment=principal*(monthlyRate*(1+monthlyRate)**numPayments)/((1+monthlyRate)**numPayments-1);
+    var totalPayments=monthlyPayment*numPayments;
+    var totalInterest=totalPayments-principal;
+    var monthlyHousing=monthlyPayment+pmiAmount+(propTax/12)+hoaFee+homeIns;
+    
+    function sCard(cls,delay,label,value,sub){return '<div class="s-card '+cls+'" style="animation-delay:'+delay+'"><div class="s-card-label">'+label+'</div><div class="s-card-value">'+value+'</div><div class="s-card-sub">'+sub+'</div></div>';}
+    document.getElementById('summaryCards').innerHTML=
+      sCard('highlight','0s','Monthly Payment',fmt(monthlyPayment),'Principal + interest')+
+      sCard('','0.1s','Monthly Housing Cost',fmt(monthlyHousing),'Incl. tax, insurance, HOA')+
+      sCard('gold','0.2s','Total Interest Paid',fmt(totalInterest),'Over '+amortYears+' years')+
+      sCard('','0.3s','Total Cost of Home',fmt(totalPayments+downPayment),'Including down payment');
+    
+    var tip='';
+    if(downPct<10)tip='💡 <strong>PMI tip:</strong> Increasing to 10% down reduces your PMI premium. Each percentage point matters.';
+    else if(downPct<20)tip='🏠 <strong>Almost PMI-free:</strong> '+fmt(homePrice*0.20-downPayment)+' more down reaches 20% and eliminates PMI entirely.';
+    else tip='✅ <strong>Strong position:</strong> With a '+downPct.toFixed(0)+'% down payment and no PMI, you are starting with solid equity.';
+    document.getElementById('tipBox').innerHTML=tip;
+    
+    var resultsEl=document.getElementById('results');resultsEl.classList.add('visible');resultsEl.scrollIntoView({behavior:'smooth',block:'nearest'});
   }
-  function syncDownAmt() {
-    var price = parseFloat(document.getElementById('homePrice').value) || 0;
-    var pct   = parseFloat(document.getElementById('downPct').value) || 0;
-    document.getElementById('downPayment').value = Math.round(price * pct / 100);
-    checkCMHC();
-  }
-  function checkCMHC() {
-    var price = parseFloat(document.getElementById('homePrice').value) || 0;
-    var down  = parseFloat(document.getElementById('downPayment').value) || 0;
-    var pct   = price > 0 ? (down / price * 100) : 0;
-    var notice = document.getElementById('cmhcNotice');
-    notice.style.display = (pct > 0 && pct < 20) ? 'block' : 'none';
-    // Cap amortization at 25 years for insured mortgages
-    var amortSel = document.getElementById('amortization');
-    if (pct < 20 && pct > 0) {
-      if (parseInt(amortSel.value) > 25) amortSel.value = '25';
-      Array.from(amortSel.options).forEach(function(o) {
-        o.disabled = parseInt(o.value) > 25;
-      });
-    } else {
-      Array.from(amortSel.options).forEach(function(o) { o.disabled = false; });
-    }
-  }
-  // CMHC premium rates (2026)
-  function getCMHCRate(downPct) {
-    if (downPct >= 20)   return 0;
-    if (downPct >= 15)   return 0.028;
-    if (downPct >= 10)   return 0.031;
-    if (downPct >= 5)    return 0.04;
-    return 0; // under 5% not allowed
-  }
-  // Calculate periodic payment
-  function calcPayment(principal, annualRate, periods) {
-    if (annualRate === 0) return principal / periods;
-    // Canadian mortgage: rate compounded semi-annually, payments monthly
-    var semiAnnualRate = annualRate / 100 / 2;
-    var effectiveMonthly = Math.pow(1 + semiAnnualRate, 2/12) - 1;
-    // Adjust for payment frequency
-    return principal * effectiveMonthly / (1 - Math.pow(1 + effectiveMonthly, -periods));
-  }
-  function calculate() {
-    var homePrice  = parseFloat(document.getElementById('homePrice').value) || 0;
-    var downPayment = parseFloat(document.getElementById('downPayment').value) || 0;
-    var annualRate = parseFloat(document.getElementById('rate').value) || 0;
-    var amortYears = parseInt(document.getElementById('amortization').value) || 25;
-    var freqPerYear = parseInt(document.getElementById('frequency').value) || 12;
-    var propTax    = parseFloat(document.getElementById('propTax').value) || 0;
-    var condoFee   = parseFloat(document.getElementById('condoFee').value) || 0;
-    var homeIns    = parseFloat(document.getElementById('insurance').value) || 0;
-    var sym        = document.getElementById('currency').value;
-    if (homePrice <= 0) { alert('Please enter a home price.'); return; }
-    if (downPayment < 0) { alert('Down payment cannot be negative.'); return; }
-    if (downPayment >= homePrice) { alert('Down payment must be less than the home price.'); return; }
-    var downPct = downPayment / homePrice * 100;
-    if (downPct < 5) { alert('Minimum down payment in Canada is 5% of the purchase price.'); return; }
-    // CMHC insurance
-    var cmhcRate    = getCMHCRate(downPct);
-    var principal   = homePrice - downPayment;
-    var cmhcAmount  = principal * cmhcRate;
-    var totalPrincipal = principal + cmhcAmount;
-    // Payment calculation
-    var totalPeriods = amortYears * freqPerYear;
-    // Convert annual rate to effective rate for payment frequency
-    var semiAnnualRate = annualRate / 100 / 2;
-    var effectiveMonthly = Math.pow(1 + semiAnnualRate, 2/12) - 1;
-    var effectivePeriodic;
-    if (freqPerYear === 12) {
-      effectivePeriodic = effectiveMonthly;
-    } else if (freqPerYear === 24) {
-      effectivePeriodic = Math.pow(1 + effectiveMonthly, 1/2) - 1;
-    } else if (freqPerYear === 26) {
-      effectivePeriodic = Math.pow(1 + effectiveMonthly, 12/26) - 1;
-    } else { // weekly
-      effectivePeriodic = Math.pow(1 + effectiveMonthly, 12/52) - 1;
-    }
-    var periodicPayment;
-    if (annualRate === 0) {
-      periodicPayment = totalPrincipal / totalPeriods;
-    } else {
-      periodicPayment = totalPrincipal * effectivePeriodic / (1 - Math.pow(1 + effectivePeriodic, -totalPeriods));
-    }
-    var monthlyEquivalent = periodicPayment * freqPerYear / 12;
-    var totalPayments     = periodicPayment * totalPeriods;
-    var totalInterest     = totalPayments - totalPrincipal;
-    // Monthly housing cost
-    var monthlyHousing = monthlyEquivalent + (propTax / 12) + condoFee + homeIns;
-    // Frequency label
-    var freqLabel = { 12: 'Monthly', 24: 'Semi-Monthly', 26: 'Bi-Weekly', 52: 'Weekly' }[freqPerYear];
-    // Store for email
-    lastResults = {
-      homePrice: homePrice, downPayment: downPayment, downPct: downPct,
-      annualRate: annualRate, amortYears: amortYears, freqLabel: freqLabel,
-      periodicPayment: periodicPayment, monthlyEquivalent: monthlyEquivalent,
-      totalPrincipal: totalPrincipal, totalInterest: totalInterest,
-      totalPayments: totalPayments, cmhcAmount: cmhcAmount,
-      monthlyHousing: monthlyHousing, sym: sym
-    };
-    // ── Summary cards ──
-    document.getElementById('summaryCards').innerHTML =
-      sCard('highlight', '0s',   freqLabel + ' Payment',   fmtFull(periodicPayment, sym), 'Principal + interest only') +
-      sCard('',          '0.1s', 'Monthly Housing Cost',   fmt(monthlyHousing, sym) + '/mo', 'Incl. tax, insurance, fees') +
-      sCard('gold',      '0.2s', 'Total Interest Paid',    fmt(totalInterest, sym), 'Over ' + amortYears + ' years') +
-      sCard('blue',      '0.3s', 'Total Cost of Home',     fmt(totalPayments + downPayment, sym), 'Including down payment');
-    function sCard(cls, delay, label, value, sub) {
-      return '<div class="s-card ' + cls + '" style="animation-delay:' + delay + '">' +
-        '<div class="s-card-label">' + label + '</div>' +
-        '<div class="s-card-value">' + value + '</div>' +
-        '<div class="s-card-sub">' + sub + '</div></div>';
-    }
-    // ── Stack bar ──
-    var total3 = totalPrincipal + totalInterest + cmhcAmount;
-    var pPct   = (principal / total3 * 100).toFixed(1);
-    var iPct   = (totalInterest / total3 * 100).toFixed(1);
-    var cPct   = (cmhcAmount / total3 * 100).toFixed(1);
-    setTimeout(function() {
-      document.getElementById('barPrincipal').style.width = pPct + '%';
-      document.getElementById('barInterest').style.width  = iPct + '%';
-      document.getElementById('barCmhc').style.width      = (cmhcAmount > 0 ? cPct : '0') + '%';
-    }, 100);
-    document.getElementById('stackLegend').innerHTML =
-      legendItem('principal', 'Principal',         fmt(principal, sym),      pPct + '%') +
-      legendItem('interest',  'Total Interest',    fmt(totalInterest, sym),  iPct + '%') +
-      (cmhcAmount > 0 ? legendItem('cmhc', 'CMHC Insurance', fmt(cmhcAmount, sym), cPct + '%') : '');
-    function legendItem(cls, label, value, pct) {
-      return '<div class="legend-item">' +
-        '<div class="legend-dot ' + cls + '"></div>' +
-        '<span class="legend-label">' + label + '</span>' +
-        '<span class="legend-value">' + value + '</span>' +
-        '<span class="legend-pct">&nbsp;(' + pct + ')</span></div>';
-    }
-    // ── Amortization comparison ──
-    var periods = [15, 20, 25, 30];
-    var compHTML = '';
-    periods.forEach(function(yrs) {
-      var disabled = (downPct < 20 && yrs > 25);
-      if (disabled) return;
-      var p = amortYears * freqPerYear;
-      var pp, ti;
-      if (yrs === amortYears) {
-        pp = periodicPayment;
-        ti = totalInterest;
-      } else {
-        var pts = yrs * freqPerYear;
-        if (annualRate === 0) {
-          pp = totalPrincipal / pts;
-        } else {
-          pp = totalPrincipal * effectivePeriodic / (1 - Math.pow(1 + effectivePeriodic, -pts));
-        }
-        ti = pp * pts - totalPrincipal;
-      }
-      var saving = yrs > amortYears ? '' :
-        (yrs < amortYears ? '<div class="comp-saving">Save ' + fmt(totalInterest - ti, sym) + ' interest</div>' : '');
-      compHTML +=
-        '<div class="comp-card' + (yrs === amortYears ? ' active' : '') + '">' +
-        '<div class="comp-period">' + yrs + ' years</div>' +
-        '<div class="comp-payment">' + fmtFull(pp * freqPerYear / 12, sym) + '<span style="font-size:0.6rem;font-family:\'DM Mono\',monospace;">/mo</span></div>' +
-        '<div class="comp-interest">' + fmt(ti, sym) + ' interest</div>' +
-        saving +
-        '</div>';
-    });
-    document.getElementById('compGrid').innerHTML = compHTML;
-    // ── CMHC Panel ──
-    var cmhcPanel = document.getElementById('cmhcPanel');
-    if (cmhcAmount > 0) {
-      cmhcPanel.style.display = 'block';
-      document.getElementById('cmhcGrid').innerHTML =
-        cmhcItem('Down Payment', (downPct.toFixed(1) + '%')) +
-        cmhcItem('Premium Rate', (cmhcRate * 100).toFixed(1) + '%') +
-        cmhcItem('CMHC Premium', fmt(cmhcAmount, sym));
-      document.getElementById('cmhcNote').innerHTML =
-        'CMHC insurance is required for down payments between 5% and 19.99%. ' +
-        'The premium of <strong>' + fmt(cmhcAmount, sym) + '</strong> is added to your mortgage principal ' +
-        'and paid off over your amortization period. ' +
-        'To avoid CMHC insurance, increase your down payment to 20% or more.';
-    } else {
-      cmhcPanel.style.display = 'none';
-    }
-    function cmhcItem(label, value) {
-      return '<div class="cmhc-item"><div class="cmhc-item-label">' + label + '</div><div class="cmhc-item-value">' + value + '</div></div>';
-    }
-    // ── Tip ──
-    var tip = '';
-    var ratio = monthlyEquivalent / (homePrice / 12 * 0.004);
-    if (downPct < 10) {
-      tip = '💡 <strong>Down payment tip:</strong> Increasing your down payment to 10% reduces your CMHC premium from 4.00% to 3.10%, saving ' + fmt(principal * 0.009, sym) + ' in insurance costs.';
-    } else if (downPct < 20) {
-      tip = '🏠 <strong>Almost there:</strong> At ' + fmt(homePrice * 0.20 - downPayment, sym) + ' more down you reach 20% and eliminate the ' + fmt(cmhcAmount, sym) + ' CMHC insurance premium entirely.';
-    } else if (totalInterest > totalPrincipal) {
-      tip = '📊 <strong>Rate tip:</strong> Over ' + amortYears + ' years you\'ll pay more in interest (' + fmt(totalInterest, sym) + ') than your original mortgage (' + fmt(principal, sym) + '). Even a 0.5% rate reduction would save thousands.';
-    } else {
-      tip = '✅ <strong>Great position:</strong> With a ' + downPct.toFixed(0) + '% down payment and no CMHC insurance, you\'re starting with strong equity. Consider accelerated bi-weekly payments to pay off your mortgage years sooner.';
-    }
-    document.getElementById('tipBox').innerHTML = tip;
-    // Show results
-    var resultsEl = document.getElementById('results');
-    resultsEl.classList.add('visible');
-    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-  function openEmailModal()  { document.getElementById('emailModal').classList.add('open'); }
-  function closeEmailModal() { document.getElementById('emailModal').classList.remove('open'); }
-  function sendEmail() {
-    var to   = document.getElementById('emailTo').value.trim();
-    var from = document.getElementById('emailFrom').value.trim();
-    var r    = lastResults;
-    if (!to) { alert('Please enter a recipient email address.'); return; }
-    var greeting = from ? from + ' has shared their mortgage calculation with you.' : 'Here is my mortgage summary:';
-    var subject  = encodeURIComponent('My Mortgage Calculation — Sharpline Tools');
-    var body     = encodeURIComponent(
-      greeting + '\n\n' +
-      '━━━━━━━━━━━━━━━━━━━━━\n' +
-      'MORTGAGE SUMMARY\n' +
-      '━━━━━━━━━━━━━━━━━━━━━\n\n' +
-      'Home Price:          CA$' + Math.round(r.homePrice).toLocaleString('en-CA') + '\n' +
-      'Down Payment:        CA$' + Math.round(r.downPayment).toLocaleString('en-CA') + ' (' + r.downPct.toFixed(1) + '%)\n' +
-      'Mortgage Principal:  CA$' + Math.round(r.totalPrincipal).toLocaleString('en-CA') + '\n' +
-      'Interest Rate:       ' + r.annualRate + '%\n' +
-      'Amortization:        ' + r.amortYears + ' years\n\n' +
-      r.freqLabel + ' Payment:   CA$' + r.periodicPayment.toLocaleString('en-CA', {minimumFractionDigits:2,maximumFractionDigits:2}) + '\n' +
-      'Monthly Equivalent:  CA$' + r.monthlyEquivalent.toLocaleString('en-CA', {minimumFractionDigits:2,maximumFractionDigits:2}) + '\n' +
-      'Total Interest:      CA$' + Math.round(r.totalInterest).toLocaleString('en-CA') + '\n' +
-      (r.cmhcAmount > 0 ? 'CMHC Insurance:      CA$' + Math.round(r.cmhcAmount).toLocaleString('en-CA') + '\n' : '') +
-      'Monthly Housing:     CA$' + Math.round(r.monthlyHousing).toLocaleString('en-CA') + '\n\n' +
-      '━━━━━━━━━━━━━━━━━━━━━\n' +
-      'Powered by Sharpline Tools\n' +
-      'Results are estimates only and not financial advice.'
-    );
-    window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
-    closeEmailModal();
-  }
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeEmailModal();
-  });
-  // Run on load with demo values
-  window.addEventListener('load', function() {
-    checkCMHC();
-    calculate();
-  });
+  window.addEventListener('load',function(){calculate();});
 </script>
 </body>
 </html>
-0 commit comments
-Comments
-0 (0)
-
-You're not receiving notifications from this thread.
-There are no files selected for viewing
