@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About MortgageMasher — US Mortgage Calculator</title>
+<meta name="description" content="MortgageMasher is a free US mortgage calculator built by P. Beal, a financial planning professional with 26 years in banking and financial planning. Calculate your monthly payment, PMI, and amortization schedule.">
+<meta name="author" content="P. Beal, Financial Planning Professional">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mortgagemasher.com/about.html">
+<meta name="google-adsense-account" content="ca-pub-8775883855490271">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8775883855490271" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0f1a0f;--paper:#f5f0e8;--sage:#4a7c59;--sage-light:#7aaa8a;--sage-pale:#d4e8da;--gold:#c8922a;--cream:#faf7f0;--muted:#8a8a7a;--border:#d8d0c0;--red:#b84444;--red-pale:#f5dada;--blue:#3a6b8a;--blue-pale:#c8dce8;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'DM Mono',monospace;min-height:100vh;overflow-x:hidden;padding-bottom:5rem;}
+  body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:100;opacity:0.5;}
+  header{padding:2.5rem 3rem 1.5rem;display:flex;align-items:baseline;gap:1rem;border-bottom:1px solid var(--border);}
+  .logo{font-family:'DM Serif Display',serif;font-size:1.8rem;color:var(--sage);letter-spacing:-0.02em;}
+  .logo span{color:var(--gold);}
+  .tagline{font-size:0.7rem;color:var(--muted);letter-spacing:0.15em;text-transform:uppercase;}
+  nav{position:fixed;bottom:0;left:0;right:0;padding:0.8rem 3rem;border-top:1px solid var(--border);background:var(--cream);display:flex;gap:1.5rem;font-size:0.72rem;z-index:99;justify-content:center;box-shadow:0 -2px 12px rgba(15,26,15,0.06);}
+  nav a{color:var(--sage);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;}
+  nav a:hover{color:var(--gold);}
+  .container{max-width:760px;margin:2.5rem auto;padding:0 2rem;}
+  .page-header{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border);}
+  .page-header h1{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--ink);margin-bottom:0.5rem;}
+  .page-header p{font-size:0.85rem;color:var(--muted);line-height:1.8;}
+  .intro-box{background:var(--sage-pale);border-left:3px solid var(--sage);padding:1rem 1.2rem;border-radius:0 3px 3px 0;font-size:0.82rem;line-height:1.8;color:var(--sage);margin-bottom:2rem;}
+  .intro-box strong{color:var(--ink);}
+  h2{font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--ink);margin:2rem 0 0.8rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border);}
+  p{font-size:0.82rem;line-height:1.9;color:var(--ink);margin-bottom:1rem;}
+  .features{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0 1.5rem;}
+  .feature-card{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:1.2rem;}
+  .feature-icon{font-size:1.4rem;margin-bottom:0.5rem;}
+  .feature-title{font-size:0.78rem;font-weight:500;color:var(--sage);margin-bottom:0.4rem;}
+  .feature-desc{font-size:0.72rem;color:var(--muted);line-height:1.7;}
+  .disclaimer-box{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:1.5rem;margin:2rem 0;}
+  .disclaimer-box h3{font-family:'DM Serif Display',serif;font-size:1rem;color:var(--ink);margin-bottom:0.6rem;}
+  .disclaimer-box p{font-size:0.78rem;color:var(--muted);line-height:1.8;margin-bottom:0.6rem;}
+  .disclaimer-box p:last-child{margin-bottom:0;}
+  .org-box{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:1.5rem;margin:2rem 0;}
+  .org-box h3{font-family:'DM Serif Display',serif;font-size:1rem;color:var(--ink);margin-bottom:0.8rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border);}
+  .org-detail{display:flex;gap:0.8rem;font-size:0.78rem;color:var(--ink);margin-bottom:0.5rem;align-items:flex-start;}
+  .org-label{color:var(--muted);min-width:100px;flex-shrink:0;}
+  .cta-btn{display:inline-block;background:var(--sage);color:white;text-decoration:none;padding:0.85rem 2rem;border-radius:2px;font-family:'DM Mono',monospace;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;transition:background 0.2s;margin-top:0.5rem;}
+  .cta-btn:hover{background:#3d6849;}
+  .tools-panel{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:1.8rem;margin:2rem 0;}
+  .tools-panel-title{font-family:'DM Serif Display',serif;font-size:1.2rem;margin-bottom:1.2rem;color:var(--ink);padding-bottom:0.6rem;border-bottom:1px solid var(--border);}
+  .tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+  .tool-card{background:var(--paper);border:1px solid var(--border);border-radius:4px;padding:1.2rem;text-decoration:none;color:var(--ink);transition:border-color 0.2s,box-shadow 0.2s;display:block;}
+  .tool-card:hover{border-color:var(--sage);box-shadow:0 2px 8px rgba(74,124,89,0.12);}
+  .tool-icon{font-size:1.4rem;margin-bottom:0.4rem;}
+  .tool-name{font-size:0.78rem;font-weight:500;color:var(--sage);margin-bottom:0.3rem;}
+  .tool-desc{font-size:0.65rem;color:var(--muted);line-height:1.6;margin-bottom:0.5rem;}
+  .tool-link{font-size:0.63rem;color:var(--gold);letter-spacing:0.05em;}
+  footer{text-align:center;padding:1.5rem 2rem;font-size:0.65rem;color:var(--muted);letter-spacing:0.08em;border-top:1px solid var(--border);margin-top:2rem;line-height:2;}
+  footer a{color:var(--sage);text-decoration:none;}
+  footer a:hover{color:var(--gold);}
+  @media(max-width:640px){header{padding:1.5rem;flex-direction:column;gap:0.3rem;}.features{grid-template-columns:1fr;}.tools-grid{grid-template-columns:1fr 1fr;}nav{padding:0.8rem 1rem;gap:0.8rem;font-size:0.65rem;}}
+  @media(max-width:400px){.tools-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Sharpline<span>.</span></div>
+  <div class="tagline">US Mortgage Calculator | mortgagemasher.com</div>
+</header>
+
+<div class="container">
+  <div class="page-header">
+    <h1>About MortgageMasher</h1>
+    <p><strong>MortgageMasher</strong> is a free US mortgage calculator built by P. Beal, a financial planning professional with 26 years in banking and financial planning, plus 19 years of direct small business ownership.</p>
+  </div>
+
+  <div class="intro-box">
+    <strong>MortgageMasher</strong> calculates your exact monthly payment, property taxes, insurance, PMI, and amortization schedule for US mortgages. Enter your loan amount, interest rate, and loan term — the calculator handles the rest instantly in your browser. Your financial data never leaves your device.
+  </div>
+
+  <h2>What MortgageMasher Does</h2>
+  <p>Most homebuyers know they need a mortgage calculator, but many free tools on the web are inaccurate or incomplete. They miss PMI, don't account for property taxes, or use simplified formulas that don't reflect real US mortgage rules.</p>
+  <p>MortgageMasher is built specifically for US mortgages. It handles FNMA guidelines, PMI thresholds, semi-annual compounding, property tax estimation, and full amortization schedules. Whether you're a first-time buyer or a seasoned investor, you get accurate numbers that reflect how your actual mortgage will work.</p>
+
+  <h2>Calculator Features</h2>
+  <div class="features">
+    <div class="feature-card"><div class="feature-icon">💰</div><div class="feature-title">Monthly Payment</div><div class="feature-desc">Exact payment calculation including principal, interest, taxes, insurance, and PMI.</div></div>
+    <div class="feature-card"><div class="feature-icon">📊</div><div class="feature-title">Full Amortization</div><div class="feature-desc">See the exact principal and interest breakdown for every month of your loan term.</div></div>
+    <div class="feature-card"><div class="feature-icon">🏠</div><div class="feature-title">PMI Calculator</div><div class="feature-desc">Know exactly when PMI drops off based on your down payment percentage and FNMA guidelines.</div></div>
+    <div class="feature-card"><div class="feature-icon">📈</div><div class="feature-title">Rate Comparison</div><div class="feature-desc">Compare multiple interest rates side by side to see the true cost difference of each rate.</div></div>
+  </div>
+
+  <h2>About the Author</h2>
+  <p>P. Beal brings 26 years of professional experience in banking and financial planning, combined with 19 years of direct small business ownership. This background informs every calculator and tool on Sharpline Tools—the focus is always on practical, numbers-based decision making rather than generic financial advice.</p>
+
+  <h2>About Sharpline</h2>
+  <p>MortgageMasher is part of the Sharpline Tools network — a suite of free personal finance calculators built to give people fast, accurate, unbiased financial information. All Sharpline tools are free to use, require no account or sign-up, and are supported by advertising.</p>
+  <p>Sharpline also operates a web design and development service — <strong>Sharpline Digital</strong> — building custom websites for small businesses in British Columbia and across Canada.</p>
+
+  <div class="org-box">
+    <h3>Organisation Details</h3>
+    <div class="org-detail"><span class="org-label">Legal name</span><span>Sharpline Emergence Ltd.</span></div>
+    <div class="org-detail"><span class="org-label">Location</span><span>Chilliwack, British Columbia, Canada</span></div>
+    <div class="org-detail"><span class="org-label">Tools network</span><span>debtcrusher.ca · vaultgoal.com · 503020.ca · mortgagemasher.com · mortgagemasher.ca</span></div>
+  </div>
+
+  <div class="disclaimer-box">
+    <h3>Important Disclaimer</h3>
+    <p>MortgageMasher is an educational planning tool. All results are estimates based on the information you enter and are provided for informational purposes only. Results assume fixed interest rates and do not account for all possible loan variations, fees, or special programs.</p>
+    <p>MortgageMasher is not a licensed mortgage lender, loan advisor, or financial planning service. Nothing on this website constitutes financial, legal, or mortgage advice. Results should not be used as the sole basis for any financial decision.</p>
+    <p>For personalised mortgage guidance, please consult a licensed mortgage lender or financial advisor.</p>
+  </div>
+
+  <a href="index.html" class="cta-btn">Use the Free Calculator →</a>
+
+  <div class="tools-panel">
+    <div class="tools-panel-title">More Free Tools from Sharpline</div>
+    <div class="tools-grid">
+      <a href="https://debtcrusher.ca" class="tool-card" target="_blank" rel="noopener"><div class="tool-icon">💳</div><div class="tool-name">Debt Payoff Calculator</div><div class="tool-desc">Snowball vs Avalanche debt repayment strategies and exact payoff timeline.</div><div class="tool-link">debtcrusher.ca →</div></a>
+      <a href="https://vaultgoal.com" class="tool-card" target="_blank" rel="noopener"><div class="tool-icon">🎯</div><div class="tool-name">Savings Goal Tracker</div><div class="tool-desc">See exactly when you'll reach any savings goal with milestone dates and compound interest.</div><div class="tool-link">vaultgoal.com →</div></a>
+      <a href="https://503020.ca" class="tool-card" target="_blank" rel="noopener"><div class="tool-icon">📊</div><div class="tool-name">50/30/20 Budget</div><div class="tool-desc">Split your income into needs, wants and savings to find extra money for goals.</div><div class="tool-link">503020.ca →</div></a>
+      <a href="https://mortgagemasher.ca" class="tool-card" target="_blank" rel="noopener"><div class="tool-icon">🍁</div><div class="tool-name">Canadian Mortgage</div><div class="tool-desc">CMHC, semi-annual compounding, FHSA. Built for Canadian mortgage rules.</div><div class="tool-link">mortgagemasher.ca →</div></a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Sharpline · mortgagemasher.com © 2026 &nbsp;·&nbsp;
+  <a href="about.html">About</a> &nbsp;·&nbsp;
+  <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="https://www.instagram.com/toolssharpline/" target="_blank" rel="noopener">📷 Instagram</a> &nbsp;·&nbsp;
+  <a href="https://ca.pinterest.com/09cldr3fi281mrfxxo6ojrxbxrmmk6/" target="_blank" rel="noopener">📌 Pinterest</a> &nbsp;·&nbsp;
+  Not financial advice · Results are estimates
+</footer>
+
+<nav>
+  <a href="index.html">🏠 Calculator</a>
+  <a href="about.html">About</a>
+  <a href="privacy.html">Privacy Policy</a>
+</nav>
+
+</body>
+</html>
